@@ -12,7 +12,7 @@ const List = () => {
             .catch(error => {
                 console.log(error);
             })
-    const y= calculations.length   
+    const y= calculations.length+0.5  
 
     return (
         <div className="flex-fill">
