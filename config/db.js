@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
 //const config = import('./default.json')
 //const url = config.get('mongoURL');
-const url = "mongodb+srv://shreyan:shreyan@cluster0.gikpvkj.mongodb.net/?retryWrites=true&w=majority";
+
+const {url} = require('./config/keys');
 
 const connectDB = async () => {
     try {
