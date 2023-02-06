@@ -12,12 +12,12 @@ const List = () => {
             .catch(error => {
                 console.log(error);
             })
-    const y= Math.round(calculations.length/2)
-
+    const y=calculations.length/2
+    const z=Math.round(y)
     return (
         <div className="flex-fill">
         
-        <h4 style={{justifyContent:"center",color:"red"}}>We have Processed {y} requests so far</h4>
+        <h4 style={{justifyContent:"center",color:"red"}}>We have Processed {z} requests so far</h4>
     </div>
     )
 }
