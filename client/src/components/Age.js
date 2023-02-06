@@ -19,6 +19,12 @@ class Age extends Component {
     console.log(this.state);
     this.setState({ birthday: this.state.newDate, showStats: true }); //important to set default state
   }
+  refresh() {
+   
+     window.location.reload(false)
+     
+     
+   }
 
   render() {
     return (
@@ -36,6 +42,9 @@ class Age extends Component {
           {''}
           <Button className='button' onClick={() => this.changeBirthday()}>
             Submit
+          </Button>
+          <Button className='button' onClick={() => this.refresh()}>
+             New Date
           </Button>
 
 
